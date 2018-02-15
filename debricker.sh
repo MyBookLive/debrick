@@ -324,7 +324,7 @@ EOP
     sleep 1
 
     #blocksize 65536 is required by the hardware, you won't be able to mount if different.
-    mkfs.ext4 -b 65536 -m 0 $diskData
+    mkfs.ext4 -O extent,has_journal -b 65536 -m 0 $diskData
 
     echo
     read -p "destroying was done, would you like to continue with installation? [y] " -n 1
