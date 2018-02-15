@@ -5,7 +5,7 @@ The purpose of the script is to reinstall the operating system (debrick) on a ha
 The script will find out what disk to use, it will not touch the partition tables and therefore preserves data (if it's necessary). It will look what the newest version of the firmware is via internet and then search for it in current folder or subfolders. if none is found it will download one.
 
 ## Prerequisites  
-* Debian or Ubuntu distro (including LiveCD),
+* Debian or Ubuntu distro (including LiveCD) with `mdadm` package installed,
 * `rootfs.img` file (2GB) extracted from [here](http://download.wdc.com/nas/apnc-010507-20110714.deb) if you want to work offline.
 
 ## Usage
